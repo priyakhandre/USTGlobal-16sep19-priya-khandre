@@ -1,0 +1,39 @@
+<div class="col-md-4 offset-4 mt-4 mb-4">
+        <form action="" [formGroup]="form" (ngSubmit)="loginData(form)">
+            <h1 class="text-center text-white bg-warning">Add Movies</h1>
+        
+            <div class="form-group">
+                    <input type="text" name="text" id="text" class="form-control" placeholder="Add Movie" formControlName="Add_Movie">
+                    <div *ngIf="Add_Movie.touched && Add_Movie.invalid">
+                        <p *ngIf="Add_Movie.errors.required " class="text-danger">This field is Required</p>
+                        
+                    </div>
+                </div>
+            <div class="form-group">
+                    <input type="text" name="text" id="text" class="form-control" placeholder="Movie Title" formControlName="Movie_Title">
+                    <div *ngIf="Movie_Title.touched && Movie_Title.invalid">
+                        <p *ngIf="Movie_Title.errors.required " class="text-danger">This field is Required</p>
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                        <input type="text" name="text" id="text" class="form-control" placeholder="Image URL" formControlName="img_URL">
+                        <div *ngIf="img_URL.touched && img_URL.invalid">
+                            <p *ngIf="img_URL.errors.required " class="text-danger">This field is Required</p>
+                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <input type="text" name="text" id="text" class="form-control" placeholder="Description" formControlName="Desc">
+                            <div *ngIf="Desc.touched && Desc.invalid">
+                                <p *ngIf="Desc.errors.required " class="text-danger">This field is Required</p>
+                                
+                            </div>
+                        </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-success float-right"[disabled]=form.invalid>add</button>
+            </div>
+        </form>
+        
+        
+        </div>
