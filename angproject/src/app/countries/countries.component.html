@@ -1,0 +1,17 @@
+<div class="col-md-4 offset-4 form-group mt-2 mb-2">
+    <select class="form-control" name="form" id="form" (click)="getNews(value)" [(ngModel)]="value">
+        <option value="in">India</option>
+        <option value="us">Unites States</option>
+        <option value="ru">Russia</option>
+        <option value="ua">Dubai</option>
+
+
+    </select>
+
+</div>
+
+<div class="col-md-3 card card-body float-left align-item-center " style="height:350px;"  *ngFor="let new1 of news">
+    <img src="{{new1.urlToImage}}" style="height:250px; width:300px;" alt="">
+    <h5>{{new1.title}}</h5>
+
+</div>
