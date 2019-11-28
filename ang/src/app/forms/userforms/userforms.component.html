@@ -1,0 +1,54 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form = "ngForm" (ngSubmit)="loginData(form)">
+    <h1 class="text-center bg-info text-white">user Form</h1>
+    
+    <div class="form-group">
+        <input type="email" name="email" id="email" class="form-control" placeholder="user Name" #email="ngModel" ngModel required >
+        <div *ngIf="email.touched && email.invalid"> 
+            <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+            
+        </div>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="user page" #email="ngModel" ngModel required >
+            <div *ngIf="email.touched && email.invalid"> 
+                <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+    </div>
+</div>
+<label for="gender">Gender</label><br>
+<div>
+       <input type="radio" name="gender" id="male">male
+       <input type="radio" name="gender" id="female">female <br>
+       <input type="radio" name="gender" id="other">other <br>
+    </div>
+
+    <div class="form-group">
+        <input type="email" name="email" id="email" class="form-control" placeholder="user email" #email="ngModel" ngModel required >
+        <div *ngIf="email.touched && email.invalid"> 
+            <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+    
+<div class="form-group">
+    <input type="email" name="email" id="email" class="form-control" placeholder="user contact number" #email="ngModel" ngModel required >
+    <div *ngIf="email.touched && email.invalid"> 
+        <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+<div class="form-group">
+    <input type="email" name="email" id="email" class="form-control" placeholder="password" #email="ngModel" ngModel required >
+    <div *ngIf="email.touched && email.invalid"> 
+        <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+<div class="form-group">
+    <input type="email" name="email" id="email" class="form-control" placeholder="Retype password" #email="ngModel" ngModel required >
+    <div *ngIf="email.touched && email.invalid"> 
+        <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+    <div class="form-group">
+   <button type="submit" class="btn btn-outline-success float-right"[disabled]="form.invalid">Add requirement </button>
+    </div>
+</form>
+
+

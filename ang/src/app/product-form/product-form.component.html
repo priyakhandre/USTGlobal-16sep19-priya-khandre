@@ -1,0 +1,38 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form = "ngForm" (ngSubmit)="loginData(form)">
+    <h1 class="text-center bg-success text-white">Product Form</h1>
+    
+    <div class="form-group">
+        <input type="email" name="email" id="email" class="form-control" placeholder="product Name" #email="ngModel" ngModel required >
+        <div *ngIf="email.touched && email.invalid"> 
+            <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+            
+        </div>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="product price" #email="ngModel" ngModel required >
+            <div *ngIf="email.touched && email.invalid"> 
+                <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+    </div>
+</div>
+
+
+    <div class="form-group">
+        <textarea rows="4" cols="55">product description</textarea>
+        <div *ngIf="email.touched && email.invalid"> 
+            <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+    
+<div class="form-group">
+    <input type="email" name="email" id="email" class="form-control" placeholder="image Url" #email="ngModel" ngModel required >
+    <div *ngIf="email.touched && email.invalid"> 
+        <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+
+    <div class="form-group">
+   <button type="submit" class="btn btn-outline-success float-right"[disabled]="form.invalid">Add product </button>
+    </div>
+</form>
+
+

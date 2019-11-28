@@ -1,0 +1,9 @@
+<div class="col-md-4 mt-2 float-left card card-body">
+    <div class="div card card-body" *ngFor= "let cat of Cats">
+        <img src="{{cat.imgUrl}}" alt="" (click)="sendCat(cat)">
+        <h1>
+            {{cat.Name}}
+        </h1>
+    </div>
+</div>
+<app-child [cat]="selectedCat"></app-child>

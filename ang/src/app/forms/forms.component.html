@@ -1,0 +1,48 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form = "ngForm" (ngSubmit)="loginData(form)">
+    <h1 class="text-center bg-dark text-white">Requirement Form</h1>
+    
+    <div class="form-group">
+        <input type="email" name="email" id="email" class="form-control" placeholder="candidate Name" #email="ngModel" ngModel required >
+        <div *ngIf="email.touched && email.invalid"> 
+            <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+            
+        </div>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Year of Experience" #email="ngModel" ngModel required >
+            <div *ngIf="email.touched && email.invalid"> 
+                <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+    </div>
+</div>
+<label for="gender">skills</label>
+<div>
+       <input type="radio" name="skills" id="java">Java
+       <input type="radio" name="skills" id="angular">Angular
+       <input type="radio" name="skills" id="SQL">SQL 
+       <input type="radio" name="skills" id="spring">Spring
+    </div>
+
+    <div class="form-group">
+        <input type="email" name="email" id="email" class="form-control" placeholder="C C T C" #email="ngModel" ngModel required >
+        <div *ngIf="email.touched && email.invalid"> 
+            <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+    </div>
+<div class="form-group">
+    <input type="email" name="email" id="email" class="form-control" placeholder="E C T C " #email="ngModel" ngModel required >
+    <div *ngIf="email.touched && email.invalid"> 
+        <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+<div class="form-group">
+    <input type="email" name="email" id="email" class="form-control" placeholder="Ready to reloacte" #email="ngModel" ngModel required >
+    <div *ngIf="email.touched && email.invalid"> 
+        <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+    <div class="form-group">
+   <button type="submit" class="btn btn-outline-success float-right"[disabled]="form.invalid">schedule interview</button>
+    </div>
+</form>
+
+

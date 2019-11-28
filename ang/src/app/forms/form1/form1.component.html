@@ -1,0 +1,42 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form = "ngForm" (ngSubmit)="loginData(form)">
+    <h1 class="text-center bg-danger text-white">company Form</h1>
+    
+    <div class="form-group">
+        <input type="email" name="email" id="email" class="form-control" placeholder="company Name" #email="ngModel" ngModel required >
+        <div *ngIf="email.touched && email.invalid"> 
+            <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+            
+        </div>
+        </div>
+        <select>
+            <option value="volvo">skills</option>
+            <option value="saab"></option>
+            <option value="opel"></option>
+            <option value="audi"></option>
+          </select>
+        <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Year of Experience" #email="ngModel" ngModel required >
+            <div *ngIf="email.touched && email.invalid"> 
+                <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+    </div>
+</div>
+
+    <div class="form-group">
+        <input type="email" name="email" id="email" class="form-control" placeholder="M C T C" #email="ngModel" ngModel required >
+        <div *ngIf="email.touched && email.invalid"> 
+            <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+    
+<div class="form-group">
+    <input type="email" name="email" id="email" class="form-control" placeholder="Location" #email="ngModel" ngModel required >
+    <div *ngIf="email.touched && email.invalid"> 
+        <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+</div>
+</div>
+    <div class="form-group">
+   <button type="submit" class="btn btn-outline-success float-right"[disabled]="form.invalid">Add requirement </button>
+    </div>
+</form>
+
+
