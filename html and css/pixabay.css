@@ -1,0 +1,167 @@
+
+div{
+
+    background-image: url(images/download.jpg);
+    height: 500px;
+    background-size: cover;
+    
+}
+
+input[type="text"] {
+
+    margin-left: 280px;
+    margin-top: 30px;
+    width: 800px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 0px;
+}
+input[type="text"]:focus{
+
+    outline: none;
+}
+label[id="comp"]{
+
+    color:white;
+    font-size: 25px;
+    font-family: Cambria;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+label[id="photos"]{
+
+    color:white;
+    font-size: 17px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+label[id="illustrations"]{
+
+    color:white;
+    font-size: 17px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+label[id="vectors"]{
+
+    color:white;
+    font-size: 17px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+label[id="videos"]{
+
+    color:white;
+    font-size: 17px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+label[id="more"]{
+
+    color:white;
+    font-size: 17px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 550px;
+}
+
+label[id="explore"]{
+
+    color:white;
+    font-size: 17px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+label[id="login"]{
+
+    color:white;
+    font-size: 17px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+button[id="signup"]{
+
+    color:white;
+    font-size: 17px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 40px;
+    background: transparent;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 5px;
+
+}
+
+button[id="signup"]:hover
+{
+cursor: pointer;
+}
+
+label[id="photos"]:hover,label[id="illustrations"]:hover,label[id="vectors"]:hover,label[id="videos"]:hover,label[id="more"]:hover,label[id="explore"]:hover,label[id="login"]:hover{
+    cursor: pointer;
+}
+
+h1[id="head"]{
+
+    color:white;
+    font-size: 30px;
+    font-family: Arial;
+    margin-top: 97px;
+    margin-left: 403px;
+    margin-bottom: 0px;
+}
+
+label[id="subhead"]{
+
+    color:white;
+    font-size: 15px;
+    font-family: Arial;
+    margin-top: 2px;
+    margin-left: 411px;
+
+}
+label[id="bin"]{
+
+    color:grey;
+    font-size: 15px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-left: 339px;
+}
+img{
+
+    size: auto;
+}
+button[id='discover']{
+
+    height: 30px;
+    width: 150px;
+    margin-left: 615px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+h2{
+
+    margin-left: 455px;
+}
+img{
+
+    width: 250px;
+    height: 300px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+ 
