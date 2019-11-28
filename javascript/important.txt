@@ -1,0 +1,7 @@
+f12
+ctrl+shift+I
+right click+Inspect
+=== strict equals to(always use this to compare wch comapres with the type not value)
+== which compares values
+!== not equals to wch compares with type 
+1 day=89000000
