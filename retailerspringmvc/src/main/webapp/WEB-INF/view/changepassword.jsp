@@ -15,7 +15,7 @@
 ID:
 <br><input type="text" name="id" value="<%=user.getId()%>"><br>
 Password:<br>
-<input type="text" name="password">
+<input type="password" name="password">
 <button type="submit">change</button>
 </form>
 </body>

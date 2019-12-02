@@ -15,6 +15,7 @@ public class OrderProduct {
 	@Id
 	@Column
 	@GeneratedValue
+	
 	private int oid;
 	
 	private String pname;

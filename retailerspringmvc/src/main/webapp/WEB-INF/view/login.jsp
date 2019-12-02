@@ -13,8 +13,8 @@
 <form action="./login" method="post">
 <table>
 <tr>
-<td>ID:</td>
-<td><input type="number" name="id"> </td>
+<td>EMAIL:</td>
+<td><input type="email" name="email"> </td>
 </tr>
 <tr>
 <td>PASSWORD: </td>
