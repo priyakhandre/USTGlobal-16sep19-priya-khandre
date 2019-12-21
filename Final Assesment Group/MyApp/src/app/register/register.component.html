@@ -1,0 +1,41 @@
+<form class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)="register(form)">
+    <div class="card-header">
+        <h3 style="color:dodgerblue">Register here</h3>
+    </div>
+    <div class="form-group">
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name"
+            pattern="[A-Za-z]{3,}" title="Name should not contain any digits" #name="ngModel" ngModel required>
+        <div *ngIf="name.touched && name.invalid">
+            <p class="alert alert-danger" *ngIf="name.errors.required">*This field is required</p>
+        </div>
+        <div *ngIf="name.errors?.pattern && name.touched">
+        <p class="alert alert-danger">*Name should not contain any digits</p>
+    </div>
+    </div>
+    <div class="form-group">
+        <input type="text" name="email" id="email" class="form-control" placeholder="Enter your Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="email should contain @ and dot(.) Eg.,abc@gmail.com" size="30"
+            #email="ngModel" ngModel required>
+        <div *ngIf="email.touched && email.invalid">
+            <p class="alert alert-danger" *ngIf="email.errors.required">*This field is required</p>
+        </div>
+        <div *ngIf="email.errors?.pattern && email.touched">
+            <p class="alert alert-danger">email should contain  lower case letter and @gmail and (.com)</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="password" name="password" id="password" class="form-control" placeholder="Enter Pasword"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-z]).{8,}"
+            title="Must Contain atleast one number and one uppercase and one special characters and lowercase letters "
+            #password="ngModel" ngModel required>
+        <div *ngIf="password.touched && password.invalid">
+            <p class="alert alert-danger" *ngIf="password.errors.required">*This field is required</p>
+        </div>
+        <div *ngIf="password.errors?.pattern && password.touched">
+        <p class="alert alert-danger">Must Contain atleast one number and one uppercase and one special characters and lowercase letters</p>
+    </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-outline-success float-right" [disabled]="form.invalid">Register</button>
+    </div>
+</form>
